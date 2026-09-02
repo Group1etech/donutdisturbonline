@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -216,7 +216,7 @@
             </div>
 
             <div class="donut-info">
-              <h3>Cookies & Cream</h3>
+              <h3>Cookies &amp; Cream</h3>
               <span>₱30</span>
             </div>
 
@@ -487,7 +487,7 @@
 
             <p>
               We offer Classic Glazed, Chocolate, Strawberry,
-              Ube, Cookies & Cream, Choco Nuts, and Berry Filled.
+              Ube, Cookies &amp; Cream, Choco Nuts, and Berry Filled.
             </p>
 
           </div>
@@ -756,8 +756,248 @@
   </footer>
 
 
-  <!-- CONNECT JAVASCRIPT -->
-  <script src="script.js"></script>
+  <!-- JAVASCRIPT -->
+  <script>
+
+    /* =========================
+       MOBILE NAVIGATION
+    ========================= */
+
+    const menuToggle =
+      document.querySelector(".menu-toggle");
+
+    const navLinks =
+      document.querySelector(".nav-links");
+
+
+    if (menuToggle && navLinks) {
+
+      menuToggle.addEventListener(
+        "click",
+        function () {
+
+          navLinks.classList.toggle("active");
+
+        }
+      );
+
+    }
+
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(function (link) {
+
+        link.addEventListener(
+          "click",
+          function () {
+
+            if (navLinks) {
+              navLinks.classList.remove("active");
+            }
+
+          }
+        );
+
+      });
+
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    const questions =
+      document.querySelectorAll(".faq-question");
+
+
+    questions.forEach(function (question) {
+
+      question.addEventListener(
+        "click",
+        function () {
+
+          const currentItem =
+            question.parentElement;
+
+
+          document
+            .querySelectorAll(".faq-item")
+            .forEach(function (item) {
+
+              if (item !== currentItem) {
+
+                item.classList.remove("active");
+
+              }
+
+            });
+
+
+          currentItem.classList.toggle("active");
+
+        }
+      );
+
+    });
+
+
+    /* =========================
+       DONUT PICKER
+    ========================= */
+
+    const donuts = [
+
+      {
+        name: "Classic Glazed",
+        price: "₱20",
+        className: "classic"
+      },
+
+      {
+        name: "Chocolate",
+        price: "₱20",
+        className: "chocolate"
+      },
+
+      {
+        name: "Strawberry",
+        price: "₱30",
+        className: "strawberry"
+      },
+
+      {
+        name: "Ube",
+        price: "₱30",
+        className: "ube"
+      },
+
+      {
+        name: "Special Glazed",
+        price: "₱28",
+        className: "special"
+      },
+
+      {
+        name: "Cookies & Cream",
+        price: "₱30",
+        className: "cookies"
+      },
+
+      {
+        name: "Choco Nuts",
+        price: "₱32",
+        className: "choco-nuts"
+      },
+
+      {
+        name: "Berry Filled",
+        price: "₱30",
+        className: "berry"
+      }
+
+    ];
+
+
+    const pickButton =
+      document.getElementById("pickDonut");
+
+    const donutVisual =
+      document.getElementById(
+        "selectedDonutVisual"
+      );
+
+    const donutName =
+      document.getElementById(
+        "selectedDonutName"
+      );
+
+    const donutPrice =
+      document.getElementById(
+        "selectedDonutPrice"
+      );
+
+
+    if (
+      pickButton &&
+      donutVisual &&
+      donutName &&
+      donutPrice
+    ) {
+
+      pickButton.addEventListener(
+        "click",
+        function () {
+
+          /* Choose random donut */
+
+          const randomIndex =
+            Math.floor(
+              Math.random() * donuts.length
+            );
+
+
+          const selectedDonut =
+            donuts[randomIndex];
+
+
+          /* Start animation */
+
+          donutVisual.style.transform =
+            "rotate(720deg) scale(0.8)";
+
+
+          /* Change result */
+
+          setTimeout(
+            function () {
+
+              donutVisual.className =
+                "picker-donut " +
+                selectedDonut.className;
+
+
+              donutVisual.innerHTML =
+                '<div class="small-hole"></div>';
+
+
+              donutName.textContent =
+                selectedDonut.name;
+
+
+              donutPrice.textContent =
+                selectedDonut.price;
+
+
+              donutVisual.style.transform =
+                "rotate(0deg) scale(1)";
+
+            },
+            400
+          );
+
+
+          /* Button text */
+
+          pickButton.textContent =
+            "CHOOSING...";
+
+
+          setTimeout(
+            function () {
+
+              pickButton.textContent =
+                "PICK AGAIN!";
+
+            },
+            1000
+          );
+
+        }
+      );
+
+    }
+
+  </script>
 
 </body>
-</html>
+            </html>
