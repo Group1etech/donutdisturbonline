@@ -4,1456 +4,692 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Donut Disturb</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Donut Disturb 🍩</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="site-header">
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="nav-container">
 
-  <div class="container navbar">
+      <div class="brand">
+        <div class="mini-donut">
+          <div class="donut-hole"></div>
+        </div>
 
-    <a href="#home" class="logo">
-      <img
-        src="images/Screenshot_20260902_231143.jpg"
-        alt="Donut Disturb Logo"
-      >
-    </a>
+        <span>DONUT<br>DISTURB</span>
+      </div>
 
-    <button class="menu-toggle" aria-label="Open navigation">
-      ☰
-    </button>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#box">Box</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#picker">Picker</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#box">Box</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#picker">Picker</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-  </div>
-
-</header>
+    </div>
+  </header>
 
 
-<main>
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
 
-<!-- HERO -->
+    <div class="hero-content">
 
-<section id="home" class="hero">
-
-  <div class="container hero-grid">
-
-    <div class="hero-text">
-
-      <span class="eyebrow">
-        🍩 DONUT DISTURB
-      </span>
+      <span class="badge">FRESH • SWEET • DISTURBINGLY GOOD</span>
 
       <h1>
-        FRESHLY MADE.
-        <span>FULLY DISTURBING.</span>
+        DON'T DISTURB.<br>
+        <span>IT'S DONUT TIME.</span>
       </h1>
 
       <p>
-        Deliciously soft, freshly made doughnuts
-        created to disturb your cravings in the
-        best possible way.
+        Freshly made donuts with flavors that are
+        impossible to ignore.
       </p>
 
       <div class="hero-buttons">
-
-        <a href="#menu" class="btn btn-primary">
-          ORDER NOW →
-        </a>
-
-        <a href="#menu" class="btn btn-outline">
-          VIEW MENU
-        </a>
-
-      </div>
-
-      <div class="hero-stats">
-
-        <div>
-          <strong>8+</strong>
-          <span>Flavors</span>
-        </div>
-
-        <div>
-          <strong>100%</strong>
-          <span>Fresh</span>
-        </div>
-
-        <div>
-          <strong>₱20</strong>
-          <span>Starting</span>
-        </div>
-
+        <a href="#menu" class="btn primary">VIEW MENU 🍩</a>
+        <a href="#picker" class="btn secondary">PICK MY DONUT</a>
       </div>
 
     </div>
 
 
-    <div class="hero-visual">
+    <div class="hero-donut-area">
 
-      <div class="hero-circle"></div>
+      <div class="donut big-donut">
+        <div class="donut-hole"></div>
 
-      <div class="floating-tag tag-one">
-        ✨ Fresh
+        <span class="sprinkle s1"></span>
+        <span class="sprinkle s2"></span>
+        <span class="sprinkle s3"></span>
+        <span class="sprinkle s4"></span>
+        <span class="sprinkle s5"></span>
+        <span class="sprinkle s6"></span>
+        <span class="sprinkle s7"></span>
       </div>
 
-      <div class="floating-tag tag-two">
-        ♥ Yummy
-      </div>
-
-      <div class="hero-image-card">
-
-        <span class="image-label">
-          BEST SELLER
-        </span>
-
-        <img
-          src="images/IMG_20260813_210720.jpg"
-          alt="Chocolate Donut"
-        >
-
-      </div>
+      <div class="floating-text">YUMMY!</div>
+      <div class="floating-star">✦</div>
+      <div class="floating-heart">♡</div>
 
     </div>
 
-  </div>
+  </section>
 
 
-  <div class="promo-banner">
-
-    <div>
-      <small>SPECIAL PROMO</small>
-
-      <strong>
-        BUY 4 GET 1 DONUT FREE 🍩
-      </strong>
-    </div>
-
-    <span>
-      Treat yourself today!
-    </span>
-
-  </div>
-
-</section>
-
-
-<!-- MENU -->
-
-<section id="menu" class="section menu-section">
-
-  <div class="container">
+  <!-- ================= MENU ================= -->
+  <section id="menu" class="section">
 
     <div class="section-heading">
-
-      <span class="eyebrow">
-        OUR MENU
-      </span>
-
-      <h2>
-        PICK YOUR <span>DONUT.</span>
-      </h2>
-
-      <p>
-        From classic glazed to loaded chocolate,
-        there's always a donut waiting for you.
-      </p>
-
+      <span>OUR MENU</span>
+      <h2>Pick Your <b>Donut</b></h2>
+      <p>One donut is never enough. Don't say we didn't warn you.</p>
     </div>
 
 
-    <div class="donut-grid">
+    <div class="menu-grid">
 
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge">
-            CLASSIC
-          </span>
-
-          <img
-            src="images/Screenshot_20260813_210650.jpg"
-            alt="Classic Glazed Donut"
-          >
-
+      <div class="menu-card">
+        <div class="card-donut glazed">
+          <div class="donut-hole"></div>
         </div>
 
-        <div class="donut-info">
-
-          <div>
-            <h3>Classic Glazed</h3>
-            <p>Simple. Sweet. Perfect.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Classic Glazed</h3>
+          <p>Simple, sweet, and timeless.</p>
           <strong>₱20</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut chocolate">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card featured-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge">
-            BEST SELLER
-          </span>
-
-          <img
-            src="images/IMG_20260813_210720.jpg"
-            alt="Chocolate Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Chocolate</h3>
-            <p>Rich chocolate goodness.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Chocolate</h3>
+          <p>Rich chocolate goodness.</p>
           <strong>₱20</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut strawberry">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge pink">
-            SWEET
-          </span>
-
-          <img
-            src="images/IMG_20260813_210748.jpg"
-            alt="Strawberry Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Strawberry</h3>
-            <p>Sweet strawberry topping.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Strawberry</h3>
+          <p>Sweet pink strawberry glaze.</p>
           <strong>₱30</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut ube">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge purple">
-            FAVORITE
-          </span>
-
-          <img
-            src="images/IMG_20260813_210810.jpg"
-            alt="Ube Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Ube</h3>
-            <p>Filipino favorite flavor.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Ube</h3>
+          <p>Filipino favorite with a twist.</p>
           <strong>₱30</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut special">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge caramel">
-            SPECIAL
-          </span>
-
-          <img
-            src="images/IMG_20260813_210831.jpg"
-            alt="Special Glazed Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Special Glazed</h3>
-            <p>Extra glaze, extra happy.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Special Glazed</h3>
+          <p>Extra glaze, extra happiness.</p>
           <strong>₱28</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut cookies">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge">
-            CRUNCHY
-          </span>
-
-          <img
-            src="images/IMG_20260813_210856.jpg"
-            alt="Cookies and Cream Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Cookies & Cream</h3>
-            <p>Creamy with cookie crunch.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Cookies & Cream</h3>
+          <p>Creamy with cookie crunch.</p>
           <strong>₱30</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut nuts">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge caramel">
-            LOADED
-          </span>
-
-          <img
-            src="images/IMG_20260813_210930.jpg"
-            alt="Choco Nuts Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Choco Nuts</h3>
-            <p>Chocolate with nutty crunch.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Choco Nuts</h3>
+          <p>Chocolate topped with crunchy nuts.</p>
           <strong>₱32</strong>
+        </div>
+      </div>
 
+
+      <div class="menu-card">
+        <div class="card-donut berry">
+          <div class="donut-hole"></div>
         </div>
 
-      </article>
-
-
-      <article class="donut-card">
-
-        <div class="donut-image">
-
-          <span class="flavor-badge pink">
-            FRUITY
-          </span>
-
-          <img
-            src="images/IMG_20260813_211017.jpg"
-            alt="Berry Filled Donut"
-          >
-
-        </div>
-
-        <div class="donut-info">
-
-          <div>
-            <h3>Berry Filled</h3>
-            <p>Sweet berry-filled goodness.</p>
-          </div>
-
+        <div class="card-info">
+          <h3>Berry Filled</h3>
+          <p>Sweet berry surprise inside.</p>
           <strong>₱30</strong>
-
         </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about" class="section about-section">
-
-  <div class="container about-grid">
-
-    <div class="about-image">
-
-      <div class="about-card">
-
-        <img
-          src="images/Screenshot_20260902_231143.jpg"
-          alt="Donut Disturb"
-        >
-
-        <div class="about-sticker">
-          🍩
-        </div>
-
       </div>
 
     </div>
 
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about section">
+
+    <div class="about-donut">
+      <div class="donut about-big">
+        <div class="donut-hole"></div>
+      </div>
+    </div>
 
     <div class="about-content">
 
-      <span class="eyebrow">
-        ABOUT US
-      </span>
+      <span>ABOUT US</span>
 
-      <h2>
-        DONUTS WORTH
-        <span>DISTURBING</span>
-        YOUR CRAVINGS FOR.
-      </h2>
+      <h2>We're here to <b>disturb</b> your cravings.</h2>
 
       <p>
-        Donut Disturb is all about turning ordinary
-        donut moments into something fun, sweet,
-        and unforgettable.
+        Donut Disturb is all about making ordinary donut
+        moments a little more exciting. From classic glazed
+        favorites to bold flavors, every donut is made to
+        satisfy your sweet cravings.
       </p>
 
       <p>
-        We make freshly prepared doughnuts with
-        different flavors that are perfect for
-        sharing—or keeping all to yourself.
+        Whether you're studying, hanging out with friends,
+        or simply craving something sweet — we've got a
+        donut for you.
       </p>
 
-
-      <div class="mission-box">
-
-        <div>
-
-          <span>🎯</span>
-
-          <div>
-            <h3>Our Mission</h3>
-
-            <p>
-              Make every bite worth disturbing
-              your cravings for.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <span>💡</span>
-
-          <div>
-            <h3>Our Vision</h3>
-
-            <p>
-              Become everyone's favorite
-              reason to crave donuts.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
+      <a href="#menu" class="btn primary">SEE OUR DONUTS</a>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- DISTURBANCE BOX -->
+  <!-- ================= DISTURBANCE BOX ================= -->
+  <section id="box" class="section box-section">
 
-<section id="box" class="section box-section">
-
-  <div class="container box-grid">
+    <div class="section-heading">
+      <span>DONUT DISTURB</span>
+      <h2>The <b>Disturbance Box</b></h2>
+      <p>Can't choose one? Get a box instead.</p>
+    </div>
 
     <div class="box-content">
 
-      <span class="eyebrow">
-        SPECIAL BOX
-      </span>
+      <div class="box-visual">
 
-      <h2>
-        THE <span>DISTURBANCE</span> BOX
-      </h2>
+        <div class="donut box-donut d1">
+          <div class="donut-hole"></div>
+        </div>
 
-      <p>
-        Can't choose just one? Don't.
-        Get six of our delicious donuts
-        in one box.
-      </p>
+        <div class="donut box-donut d2">
+          <div class="donut-hole"></div>
+        </div>
 
-      <div class="box-price">
-        ₱130
+        <div class="donut box-donut d3">
+          <div class="donut-hole"></div>
+        </div>
 
-        <small>
-          / 6 DONUTS
-        </small>
+        <div class="donut box-donut d4">
+          <div class="donut-hole"></div>
+        </div>
+
       </div>
 
-      <a href="#contact" class="btn btn-dark">
-        GET THE BOX →
-      </a>
 
-    </div>
+      <div class="box-info">
 
+        <h3>THE DISTURBANCE BOX</h3>
 
-    <div class="donut-box">
+        <p>
+          A delicious mix of our favorite donuts.
+          Perfect for sharing... or not.
+        </p>
 
-      <div class="box-top">
-        DONUT DISTURB
-      </div>
+        <ul>
+          <li>✓ Assorted flavors</li>
+          <li>✓ Freshly made</li>
+          <li>✓ Perfect for sharing</li>
+          <li>✓ Guaranteed sweet satisfaction</li>
+        </ul>
 
-      <div class="box-donuts">
-
-        <img
-          src="images/Screenshot_20260813_210650.jpg"
-          alt="Classic Glazed"
-        >
-
-        <img
-          src="images/IMG_20260813_210720.jpg"
-          alt="Chocolate"
-        >
-
-        <img
-          src="images/IMG_20260813_210748.jpg"
-          alt="Strawberry"
-        >
-
-        <img
-          src="images/IMG_20260813_210810.jpg"
-          alt="Ube"
-        >
-
-        <img
-          src="images/IMG_20260813_210831.jpg"
-          alt="Special Glazed"
-        >
-
-        <img
-          src="images/IMG_20260813_210856.jpg"
-          alt="Cookies and Cream"
-        >
+        <button class="btn primary" onclick="orderBox()">
+          GET THE BOX 🍩
+        </button>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- GALLERY -->
-
-<section id="gallery" class="section gallery-section">
-
-  <div class="container">
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="section">
 
     <div class="section-heading">
-
-      <span class="eyebrow">
-        OUR DONUTS
-      </span>
-
-      <h2>
-        A LITTLE <span>DONUT</span> GALLERY
-      </h2>
-
-      <p>
-        Warning: viewing these may cause cravings.
-      </p>
-
+      <span>DONUT VIBES</span>
+      <h2>Sweet <b>Moments</b></h2>
     </div>
-
 
     <div class="gallery-grid">
 
-      <div class="gallery-item large">
-
-        <img
-          src="images/IMG_20260813_210720.jpg"
-          alt="Chocolate Donut"
-        >
-
-        <div class="gallery-caption">
-          Chocolate
+      <div class="gallery-card g1">
+        <div class="donut gallery-donut chocolate">
+          <div class="donut-hole"></div>
         </div>
-
       </div>
 
-
-      <div class="gallery-item">
-
-        <img
-          src="images/Screenshot_20260813_210650.jpg"
-          alt="Classic Glazed Donut"
-        >
-
-        <div class="gallery-caption">
-          Classic Glazed
+      <div class="gallery-card g2">
+        <div class="donut gallery-donut strawberry">
+          <div class="donut-hole"></div>
         </div>
-
       </div>
 
-
-      <div class="gallery-item">
-
-        <img
-          src="images/IMG_20260813_210748.jpg"
-          alt="Strawberry Donut"
-        >
-
-        <div class="gallery-caption">
-          Strawberry
+      <div class="gallery-card g3">
+        <div class="donut gallery-donut ube">
+          <div class="donut-hole"></div>
         </div>
-
       </div>
 
-
-      <div class="gallery-item">
-
-        <img
-          src="images/IMG_20260813_210810.jpg"
-          alt="Ube Donut"
-        >
-
-        <div class="gallery-caption">
-          Ube
+      <div class="gallery-card g4">
+        <div class="donut gallery-donut glazed">
+          <div class="donut-hole"></div>
         </div>
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="images/IMG_20260813_210930.jpg"
-          alt="Choco Nuts Donut"
-        >
-
-        <div class="gallery-caption">
-          Choco Nuts
-        </div>
-
-      </div>
-
-
-      <div class="gallery-item">
-
-        <img
-          src="images/IMG_20260813_211017.jpg"
-          alt="Berry Filled Donut"
-        >
-
-        <div class="gallery-caption">
-          Berry Filled
-        </div>
-
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 
-
-<!-- DONUT PICKER -->
-
-<section id="picker" class="section picker-section">
-
-  <div class="container picker-container">
-
-    <div class="picker-heading section-heading">
-
-      <span class="eyebrow">
-        DONUT RANDOMIZER
-      </span>
-
-      <h2>
-        CAN'T DECIDE?
-        <span>LET US.</span>
-      </h2>
-
-      <p>
-        Let Donut Disturb choose your next craving.
-      </p>
-
-    </div>
-
-
-    <div class="picker-card">
-
-      <div class="picker-visual">
-
-        <div class="picker-circle"></div>
-
-        <img
-          id="selectedDonutVisual"
-          src="images/Screenshot_20260813_210650.jpg"
-          alt="Selected Donut"
-        >
-
-      </div>
-
-
-      <div class="picker-result">
-
-        <span>
-          YOUR DONUT IS...
-        </span>
-
-        <h3 id="selectedDonutName">
-          Classic Glazed
-        </h3>
-
-        <strong id="selectedDonutPrice">
-          ₱20
-        </strong>
-
-        <button
-          id="pickDonut"
-          class="btn btn-primary"
-        >
-          PICK MY DONUT 🍩
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq" class="section faq-section">
-
-  <div class="container faq-container">
-
-    <div class="section-heading light">
-
-      <span class="eyebrow">
-        FAQ
-      </span>
-
-      <h2>
-        GOT <span>QUESTIONS?</span>
-      </h2>
-
-    </div>
-
-
-    <div class="faq-list">
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-
-          What flavors do you offer?
-
-          <span>+</span>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            We offer Classic Glazed, Chocolate,
-            Strawberry, Ube, Special Glazed,
-            Cookies & Cream, Choco Nuts,
-            and Berry Filled.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-
-          How much are your doughnuts?
-
-          <span>+</span>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Our doughnuts start at ₱20.
-            Prices depend on the flavor.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-
-          Do you offer box sets?
-
-          <span>+</span>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Yes! Try our Disturbance Box
-            with six donuts for ₱130.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-
-          Do you accept orders in advance?
-
-          <span>+</span>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Yes. Advance orders are welcome.
-            Just contact us ahead of time.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-
-          Where can I find you?
-
-          <span>+</span>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            You can find us around our school
-            during break times.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="section contact-section">
-
-  <div class="container">
+  <!-- ================= PICKER ================= -->
+  <section id="picker" class="picker section">
 
     <div class="section-heading">
 
-      <span class="eyebrow">
-        CONTACT US
-      </span>
+      <span>CAN'T DECIDE?</span>
 
-      <h2>
-        LET'S <span>DISTURB</span> YOUR INBOX.
-      </h2>
+      <h2>Let the <b>Donut Picker</b> decide.</h2>
 
       <p>
-        Have a question or want to order?
-        Get in touch with us.
+        Leave your fate to the donuts.
       </p>
+
+    </div>
+
+
+    <div class="picker-box">
+
+      <div id="pickerDonut" class="donut picker-donut chocolate">
+        <div class="donut-hole"></div>
+      </div>
+
+      <div id="resultName" class="result-name">
+        Your donut awaits...
+      </div>
+
+      <div id="resultPrice" class="result-price">
+        🍩
+      </div>
+
+      <button class="btn primary picker-btn" onclick="pickDonut()">
+        PICK MY DONUT!
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="section faq-section">
+
+    <div class="section-heading">
+
+      <span>QUESTIONS?</span>
+
+      <h2>Frequently Asked <b>Questions</b></h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+
+        <button onclick="toggleFAQ(this)">
+          What flavors do you offer?
+          <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+          We offer Classic Glazed, Chocolate, Strawberry,
+          Ube, Special Glazed, Cookies & Cream, Choco Nuts,
+          and Berry Filled.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button onclick="toggleFAQ(this)">
+          How much are the donuts?
+          <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+          Our donuts range from ₱20 to ₱32 depending on
+          the flavor.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button onclick="toggleFAQ(this)">
+          Can I order a box?
+          <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+          Of course! Our Disturbance Box is perfect when
+          you want an assortment of delicious donuts.
+        </div>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <button onclick="toggleFAQ(this)">
+          Why is it called Donut Disturb?
+          <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+          It's a playful twist on "Do Not Disturb" —
+          because sometimes you just need uninterrupted
+          donut time.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact section">
+
+    <div class="section-heading">
+
+      <span>GET IN TOUCH</span>
+
+      <h2>Don't be shy. <b>Say hi!</b></h2>
 
     </div>
 
 
     <div class="contact-grid">
 
-
       <div class="contact-card">
-
-        <div class="contact-icon">
-          📘
-        </div>
-
-        <h3>Facebook</h3>
-
-        <p>
-          Donut Disturb
-        </p>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <div class="contact-icon">
-          📸
-        </div>
-
-        <h3>Instagram</h3>
-
-        <p>
-          @donutdisturb
-        </p>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <div class="contact-icon">
-          📱
-        </div>
-
-        <h3>Phone</h3>
-
-        <p>
-          09XX XXX XXXX
-        </p>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <div class="contact-icon">
-          ✉️
-        </div>
-
-        <h3>Email</h3>
-
-        <p>
-          donutdisturb@email.com
-        </p>
-
-      </div>
-
-
-      <div class="contact-card">
-
-        <div class="contact-icon">
-          📍
-        </div>
-
+        <div class="contact-icon">📍</div>
         <h3>Location</h3>
-
-        <p>
-          School Campus
-        </p>
-
+        <p>Your School</p>
       </div>
 
 
       <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <h3>Contact</h3>
+        <p>Message us anytime!</p>
+      </div>
 
-        <div class="contact-icon">
-          🕐
-        </div>
 
-        <h3>Hours</h3>
-
-        <p>
-          Break Time
-        </p>
-
+      <div class="contact-card">
+        <div class="contact-icon">📸</div>
+        <h3>Socials</h3>
+        <p>@donutdisturb</p>
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- TEAM -->
+  <!-- ================= FOOTER ================= -->
+  <footer>
 
-<section id="team" class="section team-section">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">
-        THE TEAM
-      </span>
-
-      <h2>
-        THE PEOPLE BEHIND
-        <span>THE DONUTS.</span>
-      </h2>
-
+    <div class="footer-donut">
+      <div class="mini-donut">
+        <div class="donut-hole"></div>
+      </div>
     </div>
 
+    <h2>DONUT DISTURB</h2>
 
-    <div class="team-grid">
+    <p>
+      Don't disturb. We're eating donuts.
+    </p>
 
+    <small>
+      © 2026 Donut Disturb. Made with 🍩 and love.
+    </small>
 
-      <div class="team-card">
+  </footer>
 
-        <div class="team-number">
-          01
-        </div>
 
-        <h3>
-          Team Member
-        </h3>
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
 
-        <p>
-          Creative & Marketing
-        </p>
+    /* MOBILE MENU */
 
-      </div>
+    function toggleMenu() {
 
+      const nav = document.getElementById("nav");
 
-      <div class="team-card">
+      nav.classList.toggle("active");
 
-        <div class="team-number">
-          02
-        </div>
+    }
 
-        <h3>
-          Team Member
-        </h3>
 
-        <p>
-          Production
-        </p>
+    /* FAQ */
 
-      </div>
+    function toggleFAQ(button) {
 
+      const item = button.parentElement;
 
-      <div class="team-card">
+      item.classList.toggle("active");
 
-        <div class="team-number">
-          03
-        </div>
+    }
 
-        <h3>
-          Team Member
-        </h3>
 
-        <p>
-          Finance
-        </p>
+    /* ORDER BOX */
 
-      </div>
+    function orderBox() {
 
-
-      <div class="team-card">
-
-        <div class="team-number">
-          04
-        </div>
-
-        <h3>
-          Team Member
-        </h3>
-
-        <p>
-          Operations
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer class="footer">
-
-  <div class="container footer-content">
-
-    <div>
-
-      <h2>
-        DONUT
-        <span>DISTURB</span>
-      </h2>
-
-      <p>
-        Donuts worth disturbing your cravings for.
-      </p>
-
-    </div>
-
-
-    <div class="footer-right">
-
-      <p>
-        © 2026 Donut Disturb
-      </p>
-
-      <p>
-        Made with 🍩 & love.
-      </p>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-  /* MOBILE MENU */
-
-  const menuToggle =
-    document.querySelector(".menu-toggle");
-
-  const navLinks =
-    document.querySelector(".nav-links");
-
-
-  if (menuToggle && navLinks) {
-
-    menuToggle.addEventListener(
-      "click",
-      function () {
-
-        navLinks.classList.toggle("active");
-
-      }
-    );
-
-  }
-
-
-  /* CLOSE MOBILE MENU */
-
-  document
-    .querySelectorAll(".nav-links a")
-    .forEach(function (link) {
-
-      link.addEventListener(
-        "click",
-        function () {
-
-          if (navLinks) {
-
-            navLinks.classList.remove("active");
-
-          }
-
-        }
+      alert(
+        "🍩 The Disturbance Box has been selected!\n\n" +
+        "Please contact us to place your order."
       );
 
-    });
+    }
 
 
+    /* DONUT PICKER */
 
-  /* FAQ */
+    const donuts = [
 
-  const questions =
-    document.querySelectorAll(".faq-question");
+      {
+        name: "Classic Glazed",
+        price: "₱20",
+        className: "glazed"
+      },
+
+      {
+        name: "Chocolate",
+        price: "₱20",
+        className: "chocolate"
+      },
+
+      {
+        name: "Strawberry",
+        price: "₱30",
+        className: "strawberry"
+      },
+
+      {
+        name: "Ube",
+        price: "₱30",
+        className: "ube"
+      },
+
+      {
+        name: "Special Glazed",
+        price: "₱28",
+        className: "special"
+      },
+
+      {
+        name: "Cookies & Cream",
+        price: "₱30",
+        className: "cookies"
+      },
+
+      {
+        name: "Choco Nuts",
+        price: "₱32",
+        className: "nuts"
+      },
+
+      {
+        name: "Berry Filled",
+        price: "₱30",
+        className: "berry"
+      }
+
+    ];
 
 
-  questions.forEach(function (question) {
+    function pickDonut() {
 
-    question.addEventListener(
-      "click",
-      function () {
-
-        const currentItem =
-          question.parentElement;
+      const donut =
+        donuts[Math.floor(Math.random() * donuts.length)];
 
 
-        document
-          .querySelectorAll(".faq-item")
-          .forEach(function (item) {
+      const picker =
+        document.getElementById("pickerDonut");
 
-            if (item !== currentItem) {
 
-              item.classList.remove("active");
+      const name =
+        document.getElementById("resultName");
+
+
+      const price =
+        document.getElementById("resultPrice");
+
+
+      picker.className =
+        "donut picker-donut " + donut.className;
+
+
+      picker.classList.add("spin");
+
+
+      name.textContent = donut.name;
+
+      price.textContent = donut.price;
+
+
+      setTimeout(function() {
+
+        picker.classList.remove("spin");
+
+      }, 600);
+
+    }
+
+
+    /* SCROLL ANIMATION */
+
+    const sections =
+      document.querySelectorAll(".section");
+
+
+    const observer =
+      new IntersectionObserver(
+
+        function(entries) {
+
+          entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("show");
 
             }
 
           });
 
+        },
 
-        currentItem.classList.toggle("active");
+        {
+          threshold: 0.12
+        }
 
-      }
-    );
+      );
 
-  });
 
+    sections.forEach(function(section) {
 
+      observer.observe(section);
 
-  /* DONUT PICKER */
+    });
 
-  const donuts = [
 
-    {
-      name: "Classic Glazed",
-      price: "₱20",
-      image:
-        "images/Screenshot_20260813_210650.jpg"
-    },
-
-    {
-      name: "Chocolate",
-      price: "₱20",
-      image:
-        "images/IMG_20260813_210720.jpg"
-    },
-
-    {
-      name: "Strawberry",
-      price: "₱30",
-      image:
-        "images/IMG_20260813_210748.jpg"
-    },
-
-    {
-      name: "Ube",
-      price: "₱30",
-      image:
-        "images/IMG_20260813_210810.jpg"
-    },
-
-    {
-      name: "Special Glazed",
-      price: "₱28",
-      image:
-        "images/IMG_20260813_210831.jpg"
-    },
-
-    {
-      name: "Cookies & Cream",
-      price: "₱30",
-      image:
-        "images/IMG_20260813_210856.jpg"
-    },
-
-    {
-      name: "Choco Nuts",
-      price: "₱32",
-      image:
-        "images/IMG_20260813_210930.jpg"
-    },
-
-    {
-      name: "Berry Filled",
-      price: "₱30",
-      image:
-        "images/IMG_20260813_211017.jpg"
-    }
-
-  ];
-
-
-  const pickButton =
-    document.getElementById("pickDonut");
-
-  const donutVisual =
-    document.getElementById(
-      "selectedDonutVisual"
-    );
-
-  const donutName =
-    document.getElementById(
-      "selectedDonutName"
-    );
-
-  const donutPrice =
-    document.getElementById(
-      "selectedDonutPrice"
-    );
-
-
-  if (
-    pickButton &&
-    donutVisual &&
-    donutName &&
-    donutPrice
-  ) {
-
-    pickButton.addEventListener(
-      "click",
-      function () {
-
-        const randomIndex =
-          Math.floor(
-            Math.random() * donuts.length
-          );
-
-
-        const selectedDonut =
-          donuts[randomIndex];
-
-
-        pickButton.disabled = true;
-
-        pickButton.textContent =
-          "CHOOSING... 🍩";
-
-
-        donutVisual.classList.add(
-          "picker-spinning"
-        );
-
-
-        setTimeout(function () {
-
-          donutVisual.src =
-            selectedDonut.image;
-
-          donutVisual.alt =
-            selectedDonut.name;
-
-
-          donutName.textContent =
-            selectedDonut.name;
-
-          donutPrice.textContent =
-            selectedDonut.price;
-
-
-          donutVisual.classList.remove(
-            "picker-spinning"
-          );
-
-
-          pickButton.textContent =
-            "PICK AGAIN! 🍩";
-
-          pickButton.disabled = false;
-
-        }, 700);
-
-      }
-    );
-
-  }
-
-
-
-  /* ================= SCROLL REVEAL ================= */
-
-  const revealElements =
-    document.querySelectorAll(
-      ".donut-card, .contact-card, .team-card, .gallery-item"
-    );
-
-
-  const revealObserver =
-    new IntersectionObserver(
-      function (entries) {
-
-        entries.forEach(function (entry) {
-
-          if (entry.isIntersecting) {
-
-            entry.target.classList.add(
-              "show"
-            );
-
-            revealObserver.unobserve(
-              entry.target
-            );
-
-          }
-
-        });
-
-      },
-      {
-        threshold: 0.12
-      }
-    );
-
-
-  revealElements.forEach(function (element) {
-
-    revealObserver.observe(element);
-
-  });
-
-</script>
+  </script>
 
 </body>
 </html>
-
